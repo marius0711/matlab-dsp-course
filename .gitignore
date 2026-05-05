@@ -4,7 +4,6 @@ octave-workspace
 *.oct
 .DS_Store
 Thumbs.db
-*.png
 *.fig
 *.wav
 *.mat

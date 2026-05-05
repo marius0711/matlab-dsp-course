@@ -75,9 +75,10 @@ xlabel('Frequency (Hz)'); ylabel('Magnitude (dB)');
 title('Windowing Effect on Spectral Leakage');
 legend; grid on; xlim([0 fs/2]); ylim([-80 10]);
 
-sgtitle('Module 03 — FFT & Spectral Analysis');
+% sgtitle('Module 03 — FFT & Spectral Analysis');
 
 %% 5. Frequency resolution
 df = fs / N;
 fprintf('\nFrequency resolution: %.2f Hz per bin\n', df);
 fprintf('To resolve 1 Hz: need at least %d samples at fs=%d Hz\n', fs, fs);
+print -dpng plots/03_fft_demo.png
